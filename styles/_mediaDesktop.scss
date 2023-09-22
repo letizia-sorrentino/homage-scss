@@ -1,34 +1,37 @@
 /*Media Queries*/
-
 /* On screens that are 1024px or more*/
 
 @media only screen and (min-width: 1024px) {
   /*TOP MENU*/
-  .burger-icon {
+
+  header,
+  .header-content {
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-navigation {
     display: none;
   }
 
-  .burger-container:hover .cross-icon,
-  .burger-container:focus-within .cross-icon {
-    display: none;
-  }
-
-  .sub-menu {
+  .desktop-navigation {
     display: initial;
-    position: relative;
-    top: 0;
   }
 
-  .logo {
-    margin-left: 5rem;
-  }
+  .desktop-registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-  .menu {
-    position: relative;
-    margin-top: 0.75rem;
-    background-color: transparent;
-    padding: 0;
-    margin-right: 23rem;
+    .white-btn {
+      margin-right: 0.5rem;
+    }
+
+    .black-btn {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
   }
 
   .top-dropdown1,
@@ -49,15 +52,6 @@
 
   .menu1:target .top-dropdown1 {
     visibility: visible;
-  }
-
-  .registration {
-    visibility: visible;
-    position: absolute;
-    top: 0.625rem;
-    background-color: transparent;
-    padding: 0;
-    justify-content: end;
   }
 
   /*MAIN PAGE*/
@@ -110,16 +104,15 @@
     padding-top: 7.5rem;
   }
 
+  .background-image {
+    height: 32.75rem;
+  }
 
+  .grid-container {
+    grid-auto-rows: 32.75rem;
+    margin-left: 0.5rem;
+  }
 
-
-
-
-
-
-
-
-  
   /*box-content*/
   .box-content h3 {
     font-size: 2.125rem;
@@ -132,7 +125,7 @@
     line-height: 2.5rem;
   }
 
-  //   /* big box-content */
+  /* big box-content */
 
   //   .payments > .box-content > .call-to-action {
   //     margin-top: 9rem;

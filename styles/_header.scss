@@ -21,15 +21,21 @@ header {
     padding: 1rem;
     align-content: flex-start;
   }
-
-  .navigation {
-    padding: 0.6rem 1rem 0.4rem;
-  }
 }
+
+.desktop-navigation {
+  display: none;
+}
+.desktop-registration {
+  display: none;
+}
+
 /*Burger container*/
 
 .burger-container {
+  margin: 0.7rem 0.5rem 0 0;
   padding: 0;
+  align-content: flex-end;
 
   .burger-icon {
     border-radius: 0.75rem;
@@ -119,10 +125,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.top-dropdown1 {
-  z-index: 1;
 }
 
 .menu-btn1:focus-within .top-dropdown1 {
