@@ -125,10 +125,16 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  display: none;
 }
 
-.menu-btn:focus-within + .top-dropdown {
+.menu-btn:focus + .top-dropdown {
   display: block;
+}
+
+.personal .top-dropdown1 {
+  display: block;
+  z-index: 2;
 }
 
 /* Dropdown title*/
@@ -957,9 +963,6 @@ footer {
   }
   .desktop-menu {
     display: flex;
-  }
-  .menu-btn:focus + .top-dropdown {
-    display: block;
   }
   .top-dropdown {
     position: absolute;
