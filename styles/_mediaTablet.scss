@@ -1,0 +1,143 @@
+/*Media Queries*/
+/* On screens that are 720px or more*/
+@media only screen and (min-width: 720px) {
+  /*navigation*/
+  .menu {
+    margin-right: 1.25rem;
+  }
+
+  .top-dropdown1,
+  .top-dropdown2,
+  .top-dropdown3,
+  .top-dropdown4 {
+    height: -moz-fit-content;
+    display: block;
+    -moz-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .dropdown-content {
+    display: initial;
+    position: relative;
+    padding: 0;
+  }
+
+  .registration {
+    top: 94.5vh;
+  }
+
+  /*main content*/
+  .intro {
+    padding-bottom: 7.5rem;
+  }
+
+  .intro-content {
+    width: 74%;
+    height: 5.625rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 25.6rem;
+    grid-gap: 1.5rem;
+  }
+
+  .big-box {
+    grid-column: 1 / span 3;
+  }
+
+  .box-image {
+    display: none;
+  }
+  .background-image {
+    height: 25.6rem;
+  }
+
+  .big-image {
+    display: initial;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.25rem;
+    overflow: clip;
+    inset: 0;
+    color: transparent;
+    --rui-aspect-ratio: 1.9084;
+  }
+
+  .small-image {
+    display: initial;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.25rem;
+    overflow: clip;
+    inset: 0;
+    color: transparent;
+    --rui-aspect-ratio: 1.9084;
+  }
+
+  /* big box-content */
+  .big-box {
+    padding-right: 24rem;
+    .box-content > .call-to-action {
+      margin-top: 3rem;
+    }
+  }
+
+  .payments > .box-content > .call-to-action {
+    margin-top: 8rem;
+  }
+
+  .bitcoin > .box-content > .call-to-action {
+    margin-top: 1rem;
+  }
+
+  .travel > .grid-container > .big-box > .call-to-action {
+    margin-top: 7rem;
+  }
+
+  /* small box-content */
+  .small-box > .box-content > .call-to-action {
+    margin-top: 16rem;
+  }
+
+  .stocks > .box-content > .call-to-action {
+    margin-top: 12rem;
+  }
+
+  .commodities > .box-content > .call-to-action {
+    margin-top: 14rem;
+  }
+
+  /* FOOTER */
+  /* from flexbox to grid */
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .plan-content p {
+    height: 8.375rem;
+  }
+
+  /* FOOTER MENU*/
+  .footer-menu {
+    height: 23.875rem;
+    display: block;
+    -moz-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    margin-right: 1.25rem;
+  }
+
+  .footer-dropdown-content {
+    display: initial;
+    position: relative;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+}

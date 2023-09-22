@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One app, all things money | Revolut</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="shortcut icon"
       href="icons/favicon-32x32.png"
@@ -53,7 +53,7 @@
           </div>
 
           <!--navigation menu-->
-          <nav>
+          <nav class="navigation">
             <div class="burger-container" tabindex="0">
               <!-- Burger Icon -->
               <!--uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -121,37 +121,33 @@
               <!--Sub-Menu-->
               <div class="sub-menu">
                 <div class="menu">
-                  <div class="top-dropdown-container">
-                    <button class="menu-btn">
-                      <a id="menu1" class="menu1" href="#top-dropdown1"
-                        >Personal</a
-                      >
-                    </button>
-                  </div>
-                  <div>
-                    <button class="menu-btn">
-                      <a id="menu2" class="menu2" href="#top-dropdown2"
-                        >Business</a
-                      >
-                    </button>
-                  </div>
-                  <div>
-                    <button class="menu-btn">
-                      <a id="menu3" class="menu3" href="#top-dropdown3"
-                        >Revolut &lt;18</a
-                      >
-                    </button>
-                  </div>
-                  <div>
-                    <button class="menu-btn">
-                      <a id="menu4" class="menu4" href="#top-dropdown4"
-                        >Company</a
-                      >
-                    </button>
-                  </div>
+                  <button
+                    class="menu-btn menu-btn1"
+                    data-target="top-dropdown1"
+                  >
+                    Personal
+                  </button>
+                  <button
+                    class="menu-btn menu-btn2"
+                    data-target="top-dropdown2"
+                  >
+                    Business
+                  </button>
+                  <button
+                    class="menu-btn menu-btn3"
+                    data-target="top-dropdown3"
+                  >
+                    Revolut &lt;18
+                  </button>
+                  <button
+                    class="menu-btn menu-btn4"
+                    data-target="top-dropdown4"
+                  >
+                    Company
+                  </button>
                 </div>
 
-                <div class="top-dropdown1">
+                <div class="top-dropdown top-dropdown1">
                   <div class="dropdown-title">
                     <a href="#">
                       Discover Revolut
@@ -368,7 +364,7 @@
                   <a href="#">Compare plans</a>
                 </div>
 
-                <div class="top-dropdown2">
+                <div class="top-dropdown top-dropdown2">
                   <div class="dropdown-title">
                     <a href="#">
                       Discover Revolut Business
@@ -611,13 +607,13 @@
                   </div>
                 </div>
 
-                <div class="top-dropdown3">
+                <div class="top-dropdown top-dropdown3">
                   <a href="#">Discover Revolut &lt;18</a>
                   <a href="#">Teens</a>
                   <a href="#">Revolut &lt;18 Parents & Guardians</a>
                 </div>
 
-                <div class="top-dropdown4">
+                <div class="top-dropdown top-dropdown4">
                   <a href="#">About us</a>
                   <a href="#">Culture</a>
                   <a href="#">Diversity & Inclusion</a>

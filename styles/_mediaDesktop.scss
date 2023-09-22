@@ -1,0 +1,189 @@
+/*Media Queries*/
+
+/* On screens that are 1024px or more*/
+
+@media only screen and (min-width: 1024px) {
+  /*TOP MENU*/
+  .burger-icon {
+    display: none;
+  }
+
+  .burger-container:hover .cross-icon,
+  .burger-container:focus-within .cross-icon {
+    display: none;
+  }
+
+  .sub-menu {
+    display: initial;
+    position: relative;
+    top: 0;
+  }
+
+  .logo {
+    margin-left: 5rem;
+  }
+
+  .menu {
+    position: relative;
+    margin-top: 0.75rem;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 23rem;
+  }
+
+  .top-dropdown1,
+  .top-dropdown2,
+  .top-dropdown3,
+  .top-dropdown4 {
+    position: absolute;
+    border-radius: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 0.5rem 1rem,
+      rgba(0, 0, 0, 0.08) 0 0.2rem 0.5rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    width: 50vw;
+    height: 100vh;
+    top: -1.875rem;
+    visibility: hidden;
+  }
+
+  .menu1:target .top-dropdown1 {
+    visibility: visible;
+  }
+
+  .registration {
+    visibility: visible;
+    position: absolute;
+    top: 0.625rem;
+    background-color: transparent;
+    padding: 0;
+    justify-content: end;
+  }
+
+  /*MAIN PAGE*/
+  .hero-image {
+    display: none;
+  }
+
+  .hero-image-desktop {
+    display: initial;
+  }
+
+  .intro {
+    position: relative;
+    top: 0;
+  }
+
+  .intro-content {
+    position: absolute;
+    top: 12.5rem;
+    right: 0;
+    height: 10rem;
+    inset: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    color: transparent;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+
+  .intro-content p,
+  .section-intro p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .main-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .section-intro h2 {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+
+  .everyday-essentials {
+    padding-top: 7.5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  /*box-content*/
+  .box-content h3 {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .box-content p,
+  .box-content span {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  //   /* big box-content */
+
+  //   .payments > .box-content > .call-to-action {
+  //     margin-top: 9rem;
+  //   }
+
+  //   .cards > .box-content > .call-to-action {
+  //     margin-top: 5rem;
+  //   }
+
+  //   .travel > .grid-container > .big-box > .box-content > .call-to-action {
+  //     margin-top: 10rem;
+  //   }
+
+  //   .security > .grid-container > .big-box > .box-content > .call-to-action {
+  //     margin-top: 7rem;
+  //   }
+
+  // //   /* small box-content */
+  //   .small-box > .box-content > .call-to-action {
+  //     margin-top: 18rem;
+  //   }
+
+  //   .rewards > .box-content > .call-to-action,
+  //   .open-banking > .box-content > .call-to-action {
+  //     margin-top: 20rem;
+  //   }
+
+  //   .no-subscriptions > .box-content > .call-to-action {
+  //     margin-top: 19.5rem;
+  //   }
+
+  //   .stocks > .box-content > .call-to-action {
+  //     margin-top: 13rem;
+  //   }
+
+  //   .commodities > .box-content > .call-to-action {
+  //     margin-top: 17rem;
+  //   }
+
+  //   .lounge > .box-content > .call-to-action {
+  //     margin-top: 20rem;
+  //   }
+
+  //   .gifting > .box-content > .call-to-action,
+  //   .donations > .box-content > .call-to-action,
+  //   .updates > .box-content > .call-to-action,
+  //   .updates2 > .box-content > .call-to-action {
+  //     margin-top: 21rem;
+  //   }
+
+  //   .plan-content p {
+  //     height: 6rem;
+  //   }
+}
