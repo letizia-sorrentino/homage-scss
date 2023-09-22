@@ -17,9 +17,9 @@
     display: none;
   }
 
-  .desktop-navigation {
-    display: initial;
-  }
+  // .desktop-navigation {
+  //   display: initial;
+  // }
 
   .desktop-registration {
     display: flex;
@@ -39,10 +39,6 @@
   .desktop-menu {
     display: flex;
   }
-
-  // .hidden {
-  //   display: none;
-  // }
 
   .menu-btn:focus + .top-dropdown {
     display: block;
