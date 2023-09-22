@@ -120,16 +120,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 2;
+  display: none;
+  z-index: 1;
 }
 
 .menu-btn:focus + .top-dropdown {
   display: block;
 }
 
-.top-dropdown1 {
-  display: block;
-}
 /* Dropdown title*/
 .top-dropdown1 > .dropdown-title a,
 .top-dropdown2 > .dropdown-title a {

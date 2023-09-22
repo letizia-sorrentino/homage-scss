@@ -125,14 +125,11 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 2;
+  display: none;
+  z-index: 1;
 }
 
 .menu-btn:focus + .top-dropdown {
-  display: block;
-}
-
-.top-dropdown1 {
   display: block;
 }
 
@@ -971,7 +968,7 @@ footer {
     margin-top: 5rem;
     width: 50vw;
     height: 100vh;
-    top: -1.875rem;
+    top: 0;
     display: none;
   }
   /*MAIN PAGE*/
