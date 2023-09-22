@@ -54,6 +54,7 @@
 
           <!--navigation menu-->
           <nav class="navigation">
+            <!-- mobile navigation -->
             <div class="mobile-navigation">
               <!-- burger-container -->
               <div class="burger-container" tabindex="0">
@@ -123,30 +124,24 @@
                 <!--Sub-Menu-->
                 <div class="sub-menu">
                   <div class="menu">
-                    <button
-                      class="menu-btn menu-btn1"
-                      data-target="top-dropdown1"
-                    >
-                      Personal
-                    </button>
-                    <button
-                      class="menu-btn menu-btn2"
-                      data-target="top-dropdown2"
-                    >
-                      Business
-                    </button>
-                    <button
-                      class="menu-btn menu-btn3"
-                      data-target="top-dropdown3"
-                    >
-                      Revolut &lt;18
-                    </button>
-                    <button
-                      class="menu-btn menu-btn4"
-                      data-target="top-dropdown4"
-                    >
-                      Company
-                    </button>
+                    <div>
+                      <button class="menu-btn" tabindex="1">Personal</button>
+                      <!-- <div class="hidden">hidden content</div> -->
+                    </div>
+                    <div>
+                      <button class="menu-btn" tabindex="1">Business</button>
+                      <div class="hidden">hidden content</div>
+                    </div>
+                    <div>
+                      <button class="menu-btn" tabindex="1">
+                        Revolut &lt;18
+                      </button>
+                      <div class="hidden">hidden content</div>
+                    </div>
+                    <div>
+                      <button class="menu-btn" tabindex="1">Company</button>
+                      <div class="hidden">hidden content</div>
+                    </div>
                   </div>
 
                   <div class="top-dropdown top-dropdown1">
@@ -636,21 +631,244 @@
                 </div>
               </div>
             </div>
+
             <!-- desktop navigation -->
             <div class="desktop-navigation">
               <div class="desktop-menu">
-                <button class="menu-btn menu-btn1" data-target="top-dropdown1">
-                  Personal
-                </button>
-                <button class="menu-btn menu-btn2" data-target="top-dropdown2">
-                  Business
-                </button>
-                <button class="menu-btn menu-btn3" data-target="top-dropdown3">
-                  Revolut &lt;18
-                </button>
-                <button class="menu-btn menu-btn4" data-target="top-dropdown4">
-                  Company
-                </button>
+                <div>
+                  <button class="menu-btn" tabindex="1">Personal</button>
+                  <!-- <div class="hidden">hidden content</div> -->
+                  <div class="top-dropdown top-dropdown1">
+                    <div class="dropdown-title">
+                      <a href="#">
+                        Discover Revolut
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 12L4 12"
+                            stroke="#323232"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6"
+                            stroke="#323232"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path></svg
+                      ></a>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                        Essentials
+                        <svg
+                          class="arrow-down"
+                          fill="#000"
+                          width="16px"
+                          height="16px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"
+                          ></path>
+                        </svg>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <div class="row">
+                          <div class="column">
+                            <a href="#">Payments</a>
+                            <a href="#">Currency Exchange</a>
+                            <a href="#">Cards</a>
+                            <a href="#">Revolut Pro</a>
+                            <a href="#">Open banking</a>
+                            <a href="#">Early salary</a>
+                            <a href="#">On demand Pay</a>
+                            <a href="#"
+                              >Revolut &lt;18 Parents &amp; Guardians</a
+                            >
+                            <a href="#">Subscritpions</a>
+                            <a href="#">Budgeting and analytics</a>
+                            <a href="#">Pockets</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                        Wealth
+                        <svg
+                          class="arrow-down"
+                          fill="#000"
+                          width="16px"
+                          height="16px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"
+                          ></path>
+                        </svg>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <div class="row">
+                          <div class="column">
+                            <a href="#">Crypto</a>
+                            <a href="#">Stocks</a>
+                            <a href="#">Commodities</a>
+                            <a href="#">Vaults</a>
+                            <a href="#">Saving vaults</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                        Security
+                        <svg
+                          class="arrow-down"
+                          fill="#000"
+                          width="16px"
+                          height="16px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"
+                          ></path>
+                        </svg>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <div class="row">
+                          <div class="column">
+                            <a href="#">Security</a>
+                            <a href="#">ABout Fraud and Scams</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                        Lifestyle
+                        <svg
+                          class="arrow-down"
+                          fill="#000"
+                          width="16px"
+                          height="16px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"
+                          ></path>
+                        </svg>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <div class="row">
+                          <div class="column">
+                            <a href="#">Rewards</a>
+                            <a href="#">Stays</a>
+                            <a href="#">Pet Insurance</a>
+                            <a href="#">Donations</a>
+                            <a href="#">Gifting</a>
+                            <a href="#">Lounge &amp; Smart delay</a>
+                            <a href="#">Revolut Shopper</a>
+                            <a href="#">Shops</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                        Help
+                        <svg
+                          class="arrow-down"
+                          fill="#000"
+                          width="16px"
+                          height="16px"
+                          viewBox="0 0 1024 1024"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"
+                          ></path>
+                        </svg>
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <div class="row">
+                          <div class="column">
+                            <a href="#">Customer help</a>
+                            <a href="#">System status</a>
+                            <a href="#">Community</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown-title">
+                      <a href="#">
+                        Plans
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 12L4 12"
+                            stroke="#323232"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6"
+                            stroke="#323232"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path></svg
+                      ></a>
+                    </div>
+                    <a href="#">Standard</a>
+                    <a href="#">Plus</a>
+                    <a href="#">Premium</a>
+                    <a href="#">Metal</a>
+                    <a href="#">Compare plans</a>
+                  </div>
+                </div>
+                <div>
+                  <button class="menu-btn" tabindex="1">Business</button>
+                  <div class="hidden">hidden content</div>
+                </div>
+                <div>
+                  <button class="menu-btn" tabindex="1">Revolut &lt;18</button>
+                  <div class="hidden">hidden content</div>
+                </div>
+                <div>
+                  <button class="menu-btn" tabindex="1">Company</button>
+                  <div class="hidden">hidden content</div>
+                </div>
               </div>
 
               <div class="top-dropdown top-dropdown1">

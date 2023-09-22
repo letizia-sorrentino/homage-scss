@@ -7,8 +7,10 @@
   header,
   .header-content {
     height: 5rem;
-    justify-content: space-between;
-    align-items: center;
+
+    .header-content {
+      align-items: center;
+    }
   }
 
   .mobile-navigation {
@@ -34,10 +36,19 @@
     }
   }
 
-  .top-dropdown1,
-  .top-dropdown2,
-  .top-dropdown3,
-  .top-dropdown4 {
+  .desktop-menu {
+    display: flex;
+  }
+
+  // .hidden {
+  //   display: none;
+  // }
+
+  .menu-btn:focus + .top-dropdown {
+    display: block;
+  }
+
+  .top-dropdown {
     position: absolute;
     border-radius: 1.25rem;
     box-shadow: rgba(0, 0, 0, 0.04) 0 0.5rem 1rem,
@@ -47,11 +58,7 @@
     width: 50vw;
     height: 100vh;
     top: -1.875rem;
-    visibility: hidden;
-  }
-
-  .menu1:target .top-dropdown1 {
-    visibility: visible;
+    display: none;
   }
 
   /*MAIN PAGE*/

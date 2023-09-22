@@ -957,7 +957,9 @@ footer {
   header,
   .header-content {
     height: 5rem;
-    justify-content: space-between;
+  }
+  header .header-content,
+  .header-content .header-content {
     align-items: center;
   }
   .mobile-navigation {
@@ -978,10 +980,13 @@ footer {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .top-dropdown1,
-  .top-dropdown2,
-  .top-dropdown3,
-  .top-dropdown4 {
+  .desktop-menu {
+    display: flex;
+  }
+  .menu-btn:focus + .top-dropdown {
+    display: block;
+  }
+  .top-dropdown {
     position: absolute;
     border-radius: 1.25rem;
     box-shadow: rgba(0, 0, 0, 0.04) 0 0.5rem 1rem, rgba(0, 0, 0, 0.08) 0 0.2rem 0.5rem;
@@ -990,10 +995,7 @@ footer {
     width: 50vw;
     height: 100vh;
     top: -1.875rem;
-    visibility: hidden;
-  }
-  .menu1:target .top-dropdown1 {
-    visibility: visible;
+    display: none;
   }
   /*MAIN PAGE*/
   .hero-image {
