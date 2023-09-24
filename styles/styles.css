@@ -86,7 +86,6 @@ header .logo {
   align-items: center;
   overflow-x: scroll;
   position: fixed;
-  height: 3.5rem;
   background-color: rgb(243, 244, 245);
   padding: 0 0.5rem;
   top: 3.5rem;
@@ -100,8 +99,7 @@ header .logo {
   border: none;
   border-radius: 0.5rem;
   color: rgb(80, 90, 99);
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin: 0.75rem 0.25rem;
   padding: 0.5rem 0.75rem;
   transition: all 0.15s ease 0s;
   white-space: nowrap;
@@ -111,31 +109,31 @@ header .logo {
 .menu-btn:hover {
   background-color: rgb(255, 255, 255);
 }
-
-.top-dropdown {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  overflow: scroll;
-  background-color: rgb(243, 244, 245);
-  padding: 1.5rem;
-  top: 7;
-  left: 0;
-  right: 0;
+.menu-btn:focus + .mobile-dropdown {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  display: none;
   z-index: 1;
 }
 
-.menu-btn:focus + .top-dropdown {
-  display: block;
+.mobile-dropdown {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(243, 244, 245);
+  position: relative;
+  left: 0;
+  right: 0;
+  display: none;
+  /* Dropdown title*/
+  /* Links inside the top dropdown menu */
+  /* The dropdown container */
+  /* Dropdown button */
+  /* Dropdown content (hidden by default) */
+  /* Show the dropdown menu on hover */
 }
-
-/* Dropdown title*/
-.top-dropdown1 > .dropdown-title a,
-.top-dropdown2 > .dropdown-title a {
+.mobile-dropdown .dropdown-title a {
   font-size: 1rem;
   font-weight: 600;
   line-height: 2rem;
@@ -150,10 +148,7 @@ header .logo {
   position: relative;
   color: rgb(25, 28, 31);
 }
-
-/* Links inside the top dropdown menu */
-.top-dropdown1 a,
-.top-dropdown2 a {
+.mobile-dropdown a {
   display: flex;
   color: rgb(25, 28, 31);
   text-align: left;
@@ -162,34 +157,18 @@ header .logo {
   font-size: 0.75rem;
   padding: 0.5rem 0;
 }
-
-.top-dropdown3 a,
-.top-dropdown4 a {
-  display: flex;
-  color: rgb(25, 28, 31);
-  text-align: left;
-  text-decoration: none;
-  margin-left: 1.25rem;
-  font-size: 75rem;
-  padding: 0.5rem 0;
-}
-
-/* The dropdown container */
-.dropdown {
+.mobile-dropdown .dropdown {
   float: left;
   overflow: hidden;
 }
-
-/* Dropdown button */
-.dropbtn {
+.mobile-dropdown .dropbtn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100vw;
   justify-items: flex-start;
   align-content: center;
 }
-
-.dropdown .dropbtn {
+.mobile-dropdown .dropdown .dropbtn {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
@@ -201,13 +180,10 @@ header .logo {
   transition: all 0.15s ease 0s;
   margin-left: 1.25rem;
 }
-
-.dropdown .arrow-down {
+.mobile-dropdown .dropdown .arrow-down {
   margin-left: 6rem;
 }
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
+.mobile-dropdown .dropdown-content {
   display: none;
   position: absolute;
   width: 100%;
@@ -218,9 +194,7 @@ header .logo {
   background-color: rgb(247, 247, 247);
   padding-left: 1.5rem;
 }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.mobile-dropdown .dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -970,6 +944,81 @@ footer {
     height: 100vh;
     top: 0;
     display: none;
+    /* Links inside the top dropdown menu */
+    /* The dropdown container */
+    /* Dropdown button */
+    /* Dropdown content (hidden by default) */
+    /* Show the dropdown menu on hover */
+  }
+  .top-dropdown .dropdown-title a {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-decoration: none;
+    align-items: center;
+    -moz-column-gap: 0.5rem;
+    column-gap: 0.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0.5rem 0;
+    grid-template-columns: auto 1fr;
+    position: relative;
+    color: rgb(25, 28, 31);
+  }
+  .top-dropdown a {
+    display: flex;
+    color: rgb(25, 28, 31);
+    text-align: left;
+    text-decoration: none;
+    margin-left: 1.25rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+  }
+  .top-dropdown .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .top-dropdown .dropbtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    justify-items: flex-start;
+    align-content: center;
+  }
+  .top-dropdown .dropdown .dropbtn {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    border: none;
+    outline: none;
+    color: rgb(25, 28, 31);
+    padding: 0.5rem 0;
+    background-color: inherit;
+    transition: all 0.15s ease 0s;
+    margin-left: 1.25rem;
+  }
+  .top-dropdown .dropdown .arrow-down {
+    margin-left: 6rem;
+  }
+  .top-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    left: 0;
+    z-index: 1;
+    color: black;
+    background-color: rgb(247, 247, 247);
+    padding-left: 1.5rem;
+  }
+  .top-dropdown .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .menu-btn:focus + .top-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
   }
   /*MAIN PAGE*/
   .hero-image {
