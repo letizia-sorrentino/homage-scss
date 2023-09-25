@@ -55,6 +55,18 @@ header {
     display: initial;
   }
 
+  // &:hover .mobile-dropdown1,
+  // &:focus-within .mobile-dropdown1 {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  // &:hover .personal-menu,
+  // &:focus-within .personal-menu {
+  //   display: initial;
+  //   z-index: 2;
+  // }
+
   &:hover .registration,
   &:focus-within .registration {
     visibility: visible;
@@ -85,6 +97,7 @@ header {
   top: 3.5rem;
   left: 0;
   right: 0;
+  height: 100vh;
 }
 
 .menu-btn {
@@ -202,6 +215,7 @@ header {
 
 .mobile-dropdown2 {
   left: -6rem;
+  z-index: 2;
 }
 
 .mobile-dropdown3 {

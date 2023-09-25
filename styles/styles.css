@@ -91,6 +91,7 @@ header .logo {
   top: 3.5rem;
   left: 0;
   right: 0;
+  height: 100vh;
 }
 
 .menu-btn {
@@ -199,6 +200,7 @@ header .logo {
 
 .mobile-dropdown2 {
   left: -6rem;
+  z-index: 2;
 }
 
 .mobile-dropdown3 {
@@ -268,6 +270,10 @@ header .logo {
 
 /* MAIN SECTION*/
 /*hero image*/
+.personal-menu {
+  display: none;
+}
+
 .hero-image {
   margin: 0;
   padding: 0;
