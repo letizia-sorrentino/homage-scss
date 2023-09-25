@@ -197,6 +197,18 @@ header .logo {
   display: block;
 }
 
+.mobile-dropdown2 {
+  left: -6rem;
+}
+
+.mobile-dropdown3 {
+  left: -12rem;
+}
+
+.mobile-dropdown4 {
+  left: -18rem;
+}
+
 .registration {
   background-color: rgb(241, 242, 244);
   -moz-column-gap: 1rem;
