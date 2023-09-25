@@ -83,7 +83,7 @@ header .logo {
 .mobile-menu {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   overflow-x: scroll;
   position: fixed;
   background-color: rgb(243, 244, 245);
@@ -91,7 +91,6 @@ header .logo {
   top: 3.5rem;
   left: 0;
   right: 0;
-  z-index: 1;
 }
 
 .menu-btn {
