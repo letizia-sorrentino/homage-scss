@@ -130,7 +130,6 @@ header {
     line-height: 2rem;
     text-decoration: none;
     align-items: center;
-    -moz-column-gap: 0.5rem;
     column-gap: 0.5rem;
     display: grid;
     grid-auto-flow: column;
@@ -216,7 +215,6 @@ header {
 
 .registration {
   background-color: rgb(241, 242, 244);
-  -moz-column-gap: 1rem;
   column-gap: 1rem;
   display: grid;
   grid-auto-flow: column;
@@ -229,7 +227,6 @@ header {
   width: 100%;
   z-index: 2;
   margin: 0;
-  height: -moz-fit-content;
   height: fit-content;
   visibility: hidden;
   border-top: 0.063rem solid rgb(223, 227, 231);
@@ -237,7 +234,7 @@ header {
 
 .white-btn {
   height: 2.25rem;
-  width: -moz-max-content;
+  width: --max-content;
   width: max-content;
   max-width: 100%;
   padding-left: 1rem;
@@ -255,7 +252,6 @@ header {
 
 .black-btn {
   height: 2.25rem;
-  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   padding-left: 1rem;

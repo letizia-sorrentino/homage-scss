@@ -51,7 +51,7 @@
     background-color: rgb(243, 244, 245);
     padding: 1rem;
     margin-top: 5rem;
-    top: 0;
+    top: 1rem;
     display: none;
 
     .top-dropdown-title {
@@ -87,7 +87,6 @@
       .dropdown-menu {
         display: flex;
         flex-direction: column;
-        width: 10rem;
       }
 
       h3 {
@@ -111,7 +110,6 @@
         .dropdown-menu {
           display: flex;
           flex-direction: column;
-          width: 10rem;
         }
 
         a {
@@ -123,6 +121,12 @@
         }
       }
     }
+  }
+
+  .top-dropdown1,
+  .top-dropdown2 {
+    right: 1rem;
+    left: 1rem;
   }
 
   .top-dropdown3,
