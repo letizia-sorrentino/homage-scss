@@ -36,101 +36,111 @@
     display: flex;
   }
 
-  .top-dropdown {
-    position: absolute;
-    border-radius: 1.25rem;
-    box-shadow: rgba(0, 0, 0, 0.04) 0 0.5rem 1rem,
-      rgba(0, 0, 0, 0.08) 0 0.2rem 0.5rem;
-    padding: 1rem;
-    margin-top: 5rem;
-    width: 50vw;
-    height: 100vh;
-    top: 0;
-    display: none;
-
-    .dropdown-title a {
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 2rem;
-      text-decoration: none;
-      align-items: center;
-      -moz-column-gap: 0.5rem;
-      column-gap: 0.5rem;
-      display: grid;
-      grid-auto-flow: column;
-      padding: 0.5rem 0;
-      grid-template-columns: auto 1fr;
-      position: relative;
-      color: rgb(25, 28, 31);
-    }
-
-    /* Links inside the top dropdown menu */
-    a {
-      display: flex;
-      color: rgb(25, 28, 31);
-      text-align: left;
-      text-decoration: none;
-      margin-left: 1.25rem;
-      font-size: 0.75rem;
-      padding: 0.5rem 0;
-    }
-
-    /* The dropdown container */
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-
-    /* Dropdown button */
-    .dropbtn {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      width: 100vw;
-      justify-items: flex-start;
-      align-content: center;
-    }
-
-    .dropdown .dropbtn {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1rem;
-      border: none;
-      outline: none;
-      color: rgb(25, 28, 31);
-      padding: 0.5rem 0;
-      background-color: inherit;
-      transition: all 0.15s ease 0s;
-      margin-left: 1.25rem;
-    }
-
-    .dropdown .arrow-down {
-      margin-left: 6rem;
-    }
-
-    /* Dropdown content (hidden by default) */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      width: 100%;
-      overflow: auto;
-      left: 0;
-      z-index: 1;
-      color: black;
-      background-color: rgb(247, 247, 247);
-      padding-left: 1.5rem;
-    }
-
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  }
-
   .menu-btn:focus + .top-dropdown {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     z-index: 1;
+  }
+
+  .top-dropdown {
+    position: absolute;
+    border-radius: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 0.5rem 1rem,
+      rgba(0, 0, 0, 0.08) 0 0.2rem 0.5rem;
+    background-color: rgb(243, 244, 245);
+    padding: 1rem;
+    margin-top: 5rem;
+    top: 0;
+    display: none;
+
+    .top-dropdown-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+
+      h2 {
+        font-weight: 600;
+        line-height: 2rem;
+        padding-right: 0.5rem;
+      }
+
+      svg {
+        align-self: baseline;
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+    }
+
+    /* The dropdown container */
+    .dropdown-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+      .box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+      }
+
+      h3 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a {
+        color: rgb(80, 90, 99);
+        text-align: left;
+        text-decoration: none;
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+      }
+
+      .box2 {
+        background-color: rgb(241, 242, 244);
+        height: 100vh;
+        border-radius: 0.5rem;
+
+        .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+          width: 10rem;
+        }
+
+        a {
+          color: rgb(80, 90, 99);
+          text-align: left;
+          text-decoration: none;
+          font-size: 0.75rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .top-dropdown3,
+  .top-dropdown4 {
+    height: fit-content;
+    margin-right: 2rem;
+
+    .dropdown-menu {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: rgb(80, 90, 99);
+      text-align: left;
+      text-decoration: none;
+      font-size: 0.75rem;
+      padding: 0.5rem 0;
+    }
   }
 
   /*MAIN PAGE*/
