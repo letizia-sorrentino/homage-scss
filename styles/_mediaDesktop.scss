@@ -103,7 +103,7 @@
       }
 
       .box2 {
-        background-color: rgb(241, 242, 244);
+        background-color: rgba(240, 242, 244, 255);
         height: 100vh;
         border-radius: 0.5rem;
 
@@ -198,12 +198,11 @@
   }
 
   .background-image {
-    height: 32.75rem;
+    height: 33rem;
   }
 
   .grid-container {
-    grid-auto-rows: 32.75rem;
-    margin-left: 0.5rem;
+    grid-auto-rows: 33rem;
   }
 
   /*box-content*/
@@ -220,56 +219,56 @@
 
   /* big box-content */
 
-  //   .payments > .box-content > .call-to-action {
-  //     margin-top: 9rem;
-  //   }
+  .payments > .box-content > .call-to-action {
+    margin-top: 9rem;
+  }
 
-  //   .cards > .box-content > .call-to-action {
-  //     margin-top: 5rem;
-  //   }
+  .cards > .box-content > .call-to-action {
+    margin-top: 5rem;
+  }
 
-  //   .travel > .grid-container > .big-box > .box-content > .call-to-action {
-  //     margin-top: 10rem;
-  //   }
+  .travel > .grid-container > .big-box > .box-content > .call-to-action {
+    margin-top: 10rem;
+  }
 
-  //   .security > .grid-container > .big-box > .box-content > .call-to-action {
-  //     margin-top: 7rem;
-  //   }
+  .security > .grid-container > .big-box > .box-content > .call-to-action {
+    margin-top: 7rem;
+  }
 
-  // //   /* small box-content */
-  //   .small-box > .box-content > .call-to-action {
-  //     margin-top: 18rem;
-  //   }
+  //   /* small box-content */
+  .small-box > .box-content > .call-to-action {
+    margin-top: 18rem;
+  }
 
-  //   .rewards > .box-content > .call-to-action,
-  //   .open-banking > .box-content > .call-to-action {
-  //     margin-top: 20rem;
-  //   }
+  .rewards > .box-content > .call-to-action,
+  .open-banking > .box-content > .call-to-action {
+    margin-top: 20rem;
+  }
 
-  //   .no-subscriptions > .box-content > .call-to-action {
-  //     margin-top: 19.5rem;
-  //   }
+  .no-subscriptions > .box-content > .call-to-action {
+    margin-top: 19.5rem;
+  }
 
-  //   .stocks > .box-content > .call-to-action {
-  //     margin-top: 13rem;
-  //   }
+  .stocks > .box-content > .call-to-action {
+    margin-top: 13rem;
+  }
 
-  //   .commodities > .box-content > .call-to-action {
-  //     margin-top: 17rem;
-  //   }
+  .commodities > .box-content > .call-to-action {
+    margin-top: 17rem;
+  }
 
-  //   .lounge > .box-content > .call-to-action {
-  //     margin-top: 20rem;
-  //   }
+  .lounge > .box-content > .call-to-action {
+    margin-top: 20rem;
+  }
 
-  //   .gifting > .box-content > .call-to-action,
-  //   .donations > .box-content > .call-to-action,
-  //   .updates > .box-content > .call-to-action,
-  //   .updates2 > .box-content > .call-to-action {
-  //     margin-top: 21rem;
-  //   }
+  .gifting > .box-content > .call-to-action,
+  .donations > .box-content > .call-to-action,
+  .updates > .box-content > .call-to-action,
+  .updates2 > .box-content > .call-to-action {
+    margin-top: 21rem;
+  }
 
-  //   .plan-content p {
-  //     height: 6rem;
-  //   }
+  .plan-content p {
+    height: 6rem;
+  }
 }

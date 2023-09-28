@@ -391,19 +391,6 @@ h1 {
   min-width: 0;
 }
 
-.everyday-essentials,
-.investements,
-.travel,
-.lifestyle,
-.security,
-.news,
-.join-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Grid-container */
 .grid-container {
   display: grid;
@@ -414,29 +401,19 @@ h1 {
   margin: 0 auto;
 }
 
-.small-box,
-.big-box {
-  max-width: 100%;
-}
-
 .background-image {
   position: absolute;
   margin-top: 0;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
   height: 32rem;
+  max-width: 21.125rem;
 }
 
 .box-image {
   width: 100%;
   height: 100%;
   border-radius: 1.25rem;
-  overflow: clip;
-  inset: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
-  color: transparent;
-  --rui-aspect-ratio: 0.659449;
 }
 
 .box-image-responsive {
@@ -453,11 +430,6 @@ h1 {
   margin-top: 0.625rem;
   margin-right: 2.5rem;
 }
-
-.white {
-  color: rgb(255, 255, 255);
-}
-
 .box-content h3 {
   font-weight: 600;
   white-space: pre-wrap;
@@ -467,7 +439,6 @@ h1 {
   line-height: 1.75rem;
   margin-bottom: 0;
 }
-
 .box-content p {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -476,6 +447,14 @@ h1 {
   word-break: break-word;
   font-weight: 400;
   margin-top: 0.5rem;
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.blue {
+  color: rgb(11, 110, 249);
 }
 
 .investements > .grid-container > .big-box > .box-content > p {
@@ -489,10 +468,6 @@ h1 {
 
 .travel > .grid-container > .big-box > .box-content > .call-to-action {
   margin-top: 0;
-}
-
-.blue {
-  color: rgb(11, 110, 249);
 }
 
 .call-to-action svg {
@@ -834,31 +809,27 @@ footer {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 25.6rem;
-    grid-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
   .big-box {
-    grid-column: 1/span 3;
+    grid-column: span 2;
+  }
+  .small-box {
+    grid-column: span 1;
   }
   .box-image {
     display: none;
   }
   .background-image {
     height: 25.6rem;
+    max-width: 62.5rem;
   }
-  .big-image {
-    display: initial;
-    height: 100%;
-    width: 100%;
-    border-radius: 1.25rem;
-    overflow: clip;
-    inset: 0;
-    color: transparent;
-    --rui-aspect-ratio: 1.9084;
-  }
+  .big-image,
   .small-image {
     display: initial;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     border-radius: 1.25rem;
     overflow: clip;
     inset: 0;
@@ -866,10 +837,10 @@ footer {
     --rui-aspect-ratio: 1.9084;
   }
   /* big box-content */
-  .big-box {
-    padding-right: 24rem;
+  .big-box .box-content {
+    max-width: 50%;
   }
-  .big-box .box-content > .call-to-action {
+  .big-box .call-to-action {
     margin-top: 3rem;
   }
   .payments > .box-content > .call-to-action {
@@ -1007,7 +978,7 @@ footer {
     padding: 0.5rem 0;
   }
   .top-dropdown .dropdown-container .box2 {
-    background-color: rgb(241, 242, 244);
+    background-color: rgb(240, 242, 244);
     height: 100vh;
     border-radius: 0.5rem;
   }
@@ -1088,11 +1059,10 @@ footer {
     padding-top: 7.5rem;
   }
   .background-image {
-    height: 32.75rem;
+    height: 33rem;
   }
   .grid-container {
-    grid-auto-rows: 32.75rem;
-    margin-left: 0.5rem;
+    grid-auto-rows: 33rem;
   }
   /*box-content*/
   .box-content h3 {
@@ -1105,4 +1075,44 @@ footer {
     line-height: 2.5rem;
   }
   /* big box-content */
+  .payments > .box-content > .call-to-action {
+    margin-top: 9rem;
+  }
+  .cards > .box-content > .call-to-action {
+    margin-top: 5rem;
+  }
+  .travel > .grid-container > .big-box > .box-content > .call-to-action {
+    margin-top: 10rem;
+  }
+  .security > .grid-container > .big-box > .box-content > .call-to-action {
+    margin-top: 7rem;
+  }
+  .small-box > .box-content > .call-to-action {
+    margin-top: 18rem;
+  }
+  .rewards > .box-content > .call-to-action,
+  .open-banking > .box-content > .call-to-action {
+    margin-top: 20rem;
+  }
+  .no-subscriptions > .box-content > .call-to-action {
+    margin-top: 19.5rem;
+  }
+  .stocks > .box-content > .call-to-action {
+    margin-top: 13rem;
+  }
+  .commodities > .box-content > .call-to-action {
+    margin-top: 17rem;
+  }
+  .lounge > .box-content > .call-to-action {
+    margin-top: 20rem;
+  }
+  .gifting > .box-content > .call-to-action,
+  .donations > .box-content > .call-to-action,
+  .updates > .box-content > .call-to-action,
+  .updates2 > .box-content > .call-to-action {
+    margin-top: 21rem;
+  }
+  .plan-content p {
+    height: 6rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
