@@ -47,64 +47,25 @@
     --rui-aspect-ratio: 1.9084;
   }
 
-  .background-image {
-    height: 25.6rem;
-    max-width: 59rem;
-  }
-
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 25.6rem;
     max-width: 59rem;
     align-content: center;
   }
-  /* big box-content */
 
+  /* big box */
   .big-box {
-    grid-column: span 2;
-
-    .box-content {
-      max-width: 50%;
-
-      .call-to-action {
-        margin-top: 9rem;
-      }
-    }
+    grid-column: 1 / span 2;
   }
 
-  /* small box-content */
+  /* small box   */
   .small-box {
     grid-column: span 1;
-    .box-content {
-      .call-to-action {
-        margin-top: 16rem;
-      }
-    }
   }
 
-  .payments > .box-content > .call-to-action {
-    margin-top: 14rem;
+  .box-content {
+    max-width: 50%;
   }
-  .bitcoin > .box-content > .call-to-action {
-    margin-top: 8rem;
-  }
-
-  .stays > .box-content > .call-to-action {
-    margin-top: 12rem;
-  }
-
-  .fx > .box-content > .call-to-action {
-    margin-top: 14rem;
-  }
-
-  .stocks > .box-content > .call-to-action {
-    margin-top: 10rem;
-  }
-
-  .commodities > .box-content > .call-to-action {
-    margin-top: 14rem;
-  }
-
   /* FOOTER */
   /* from flexbox to grid */
   .flex-container {
