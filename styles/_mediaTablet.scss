@@ -55,7 +55,8 @@
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 25.6rem;
-    max-width: 61rem;
+    max-width: 59rem;
+    align-content: center;
   }
   /* big box-content */
 
