@@ -779,6 +779,11 @@ footer {
     width: 74%;
     height: 5.625rem;
   }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .box-image {
     display: none;
   }
@@ -794,8 +799,9 @@ footer {
   }
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 59rem;
-    align-content: center;
+    grid-auto-rows: 26rem;
+    max-width: 48rem;
+    justify-items: center;
   }
   /* big box */
   .big-box {
@@ -806,7 +812,7 @@ footer {
     grid-column: span 1;
   }
   .box-content {
-    max-width: 50%;
+    max-width: 40%;
   }
   /* FOOTER */
   /* from flexbox to grid */
@@ -1004,6 +1010,13 @@ footer {
   .everyday-essentials {
     padding-top: 7.5rem;
   }
+  .grid-container {
+    max-width: 59rem;
+    grid-auto-rows: 32rem;
+  }
+  box-content {
+    width: 30%;
+  }
   /*box-content*/
   .box-content h3 {
     font-size: 2.125rem;
@@ -1013,46 +1026,5 @@ footer {
   .box-content span {
     font-size: 1.25rem;
     line-height: 2.5rem;
-  }
-  /* big box-content */
-  .payments > .box-content > .call-to-action {
-    margin-top: 9rem;
-  }
-  .cards > .box-content > .call-to-action {
-    margin-top: 5rem;
-  }
-  .stays > .box-content > .call-to-action {
-    margin-top: 10rem;
-  }
-  .security > .grid-container > .big-box > .box-content > .call-to-action {
-    margin-top: 7rem;
-  }
-  .small-box > .box-content > .call-to-action {
-    margin-top: 18rem;
-  }
-  .rewards > .box-content > .call-to-action,
-  .open-banking > .box-content > .call-to-action {
-    margin-top: 20rem;
-  }
-  .no-subscriptions > .box-content > .call-to-action {
-    margin-top: 19.5rem;
-  }
-  .stocks > .box-content > .call-to-action {
-    margin-top: 13rem;
-  }
-  .commodities > .box-content > .call-to-action {
-    margin-top: 17rem;
-  }
-  .lounge > .box-content > .call-to-action {
-    margin-top: 20rem;
-  }
-  .gifting > .box-content > .call-to-action,
-  .donations > .box-content > .call-to-action,
-  .updates > .box-content > .call-to-action,
-  .updates2 > .box-content > .call-to-action {
-    margin-top: 21rem;
-  }
-  .plan-content p {
-    height: 6rem;
   }
 }/*# sourceMappingURL=styles.css.map */

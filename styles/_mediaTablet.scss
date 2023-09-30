@@ -32,6 +32,12 @@
     height: 5.625rem;
   }
 
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .box-image {
     display: none;
   }
@@ -49,8 +55,9 @@
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 59rem;
-    align-content: center;
+    grid-auto-rows: 26rem;
+    max-width: 48rem;
+    justify-items: center;
   }
 
   /* big box */
@@ -64,8 +71,9 @@
   }
 
   .box-content {
-    max-width: 50%;
+    max-width: 40%;
   }
+
   /* FOOTER */
   /* from flexbox to grid */
   .flex-container {

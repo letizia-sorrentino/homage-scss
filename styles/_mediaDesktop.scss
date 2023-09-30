@@ -197,9 +197,14 @@
     padding-top: 7.5rem;
   }
 
-  // .grid-container {
-  //   grid-auto-rows: 33rem;
-  // }
+  .grid-container {
+    max-width: 59rem;
+    grid-auto-rows: 32rem;
+  }
+
+  box-content {
+    width: 30%;
+  }
 
   /*box-content*/
   .box-content h3 {
@@ -211,60 +216,5 @@
   .box-content span {
     font-size: 1.25rem;
     line-height: 2.5rem;
-  }
-
-  /* big box-content */
-
-  .payments > .box-content > .call-to-action {
-    margin-top: 9rem;
-  }
-
-  .cards > .box-content > .call-to-action {
-    margin-top: 5rem;
-  }
-
-  .stays > .box-content > .call-to-action {
-    margin-top: 10rem;
-  }
-
-  .security > .grid-container > .big-box > .box-content > .call-to-action {
-    margin-top: 7rem;
-  }
-
-  //   /* small box-content */
-  .small-box > .box-content > .call-to-action {
-    margin-top: 18rem;
-  }
-
-  .rewards > .box-content > .call-to-action,
-  .open-banking > .box-content > .call-to-action {
-    margin-top: 20rem;
-  }
-
-  .no-subscriptions > .box-content > .call-to-action {
-    margin-top: 19.5rem;
-  }
-
-  .stocks > .box-content > .call-to-action {
-    margin-top: 13rem;
-  }
-
-  .commodities > .box-content > .call-to-action {
-    margin-top: 17rem;
-  }
-
-  .lounge > .box-content > .call-to-action {
-    margin-top: 20rem;
-  }
-
-  .gifting > .box-content > .call-to-action,
-  .donations > .box-content > .call-to-action,
-  .updates > .box-content > .call-to-action,
-  .updates2 > .box-content > .call-to-action {
-    margin-top: 21rem;
-  }
-
-  .plan-content p {
-    height: 6rem;
   }
 }
