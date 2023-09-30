@@ -812,7 +812,7 @@ footer {
     grid-column: span 1;
   }
   .box-content {
-    max-width: 40%;
+    max-width: 34%;
   }
   /* FOOTER */
   /* from flexbox to grid */
@@ -1015,7 +1015,7 @@ footer {
     grid-auto-rows: 32rem;
   }
   box-content {
-    width: 30%;
+    max-width: 33%;
   }
   /*box-content*/
   .box-content h3 {
