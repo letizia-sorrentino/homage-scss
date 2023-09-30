@@ -110,6 +110,99 @@ header {
     justify-content: flex-start;
     z-index: 1;
   }
+
+  &:focus + .fixed-dropdown {
+    display: none;
+    z-index: 0;
+  }
+}
+
+.fixed-dropdown {
+  height: 100vh;
+  width: 90vw;
+  background-color: rgb(243, 244, 245);
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* Dropdown title*/
+  .dropdown-title a {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-decoration: none;
+    align-items: center;
+    column-gap: 0.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0.5rem 0;
+    grid-template-columns: auto 1fr;
+    position: relative;
+    color: rgb(25, 28, 31);
+  }
+  /* Links inside the top dropdown menu */
+  a {
+    display: flex;
+    color: rgb(25, 28, 31);
+    text-align: left;
+    text-decoration: none;
+    margin-left: 1.25rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropbtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    justify-items: flex-start;
+    align-content: center;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    border: none;
+    outline: none;
+    color: rgb(25, 28, 31);
+    padding: 0.5rem 0;
+    background-color: inherit;
+    transition: all 0.15s ease 0s;
+    margin-left: 1.25rem;
+  }
+
+  .dropdown .arrow-down {
+    margin-left: 6rem;
+  }
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    left: 0;
+    z-index: 1;
+    color: black;
+    background-color: rgb(247, 247, 247);
+    padding-left: 1.5rem;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
 .mobile-dropdown {

@@ -17,6 +17,10 @@
     display: none;
   }
 
+  .fixed-dropdown {
+    display: none;
+  }
+
   .desktop-registration {
     display: flex;
     align-items: center;
@@ -203,7 +207,7 @@
   }
 
   box-content {
-    max-width: 33%;
+    max-width: 30%;
   }
 
   /*box-content*/
