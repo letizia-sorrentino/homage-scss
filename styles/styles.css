@@ -117,7 +117,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 2;
+  z-index: 1;
 }
 .menu-btn:focus + .fixed-dropdown {
   display: none;
@@ -130,11 +130,12 @@ header .logo {
   background-color: rgb(243, 244, 245);
   position: absolute;
   top: 3rem;
-  left: 0;
+  left: 1.5rem;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  z-index: 1;
   /* Dropdown title*/
   /* Links inside the top dropdown menu */
   /* The dropdown container */
@@ -207,16 +208,20 @@ header .logo {
   display: block;
 }
 
-.mobile-dropdown {
+.mobile-dropdown1,
+.mobile-dropdown2 {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(243, 244, 245);
-  position: relative;
-  left: 0;
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
   right: 0;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   /* Dropdown title*/
   /* Links inside the top dropdown menu */
   /* The dropdown container */
@@ -224,7 +229,8 @@ header .logo {
   /* Dropdown content (hidden by default) */
   /* Show the dropdown menu on hover */
 }
-.mobile-dropdown .dropdown-title a {
+.mobile-dropdown1 .dropdown-title a,
+.mobile-dropdown2 .dropdown-title a {
   font-size: 1rem;
   font-weight: 600;
   line-height: 2rem;
@@ -239,7 +245,8 @@ header .logo {
   position: relative;
   color: rgb(25, 28, 31);
 }
-.mobile-dropdown a {
+.mobile-dropdown1 a,
+.mobile-dropdown2 a {
   display: flex;
   color: rgb(25, 28, 31);
   text-align: left;
@@ -248,18 +255,21 @@ header .logo {
   font-size: 0.75rem;
   padding: 0.5rem 0;
 }
-.mobile-dropdown .dropdown {
+.mobile-dropdown1 .dropdown,
+.mobile-dropdown2 .dropdown {
   float: left;
   overflow: hidden;
 }
-.mobile-dropdown .dropbtn {
+.mobile-dropdown1 .dropbtn,
+.mobile-dropdown2 .dropbtn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100vw;
   justify-items: flex-start;
   align-content: center;
 }
-.mobile-dropdown .dropdown .dropbtn {
+.mobile-dropdown1 .dropdown .dropbtn,
+.mobile-dropdown2 .dropdown .dropbtn {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
@@ -271,10 +281,12 @@ header .logo {
   transition: all 0.15s ease 0s;
   margin-left: 1.25rem;
 }
-.mobile-dropdown .dropdown .arrow-down {
+.mobile-dropdown1 .dropdown .arrow-down,
+.mobile-dropdown2 .dropdown .arrow-down {
   margin-left: 6rem;
 }
-.mobile-dropdown .dropdown-content {
+.mobile-dropdown1 .dropdown-content,
+.mobile-dropdown2 .dropdown-content {
   display: none;
   position: absolute;
   width: 100%;
@@ -285,23 +297,36 @@ header .logo {
   background-color: rgb(247, 247, 247);
   padding-left: 1.5rem;
 }
-.mobile-dropdown .dropdown:hover .dropdown-content {
+.mobile-dropdown1 .dropdown:hover .dropdown-content,
+.mobile-dropdown2 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.mobile-dropdown2 {
-  left: -6rem;
-  z-index: 2;
-}
-
-.mobile-dropdown3 {
-  left: -12rem;
-  z-index: 2;
-}
-
+.mobile-dropdown3,
 .mobile-dropdown4 {
-  left: -19rem;
-  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(243, 244, 245);
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mobile-dropdown3 .dropdown-menu,
+.mobile-dropdown4 .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-dropdown3 a,
+.mobile-dropdown4 a {
+  color: rgb(80, 90, 99);
+  text-align: left;
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
 }
 
 .registration {
