@@ -23,6 +23,10 @@ header {
   }
 }
 
+.tablet-menu {
+  display: none;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -116,6 +120,14 @@ header {
     z-index: 0;
   }
 }
+
+// .fixed-dropdown-tablet {
+//   display: none;
+// }
+
+// .tablet-dropdown {
+//   display: none;
+// }
 
 .fixed-dropdown {
   height: 100vh;

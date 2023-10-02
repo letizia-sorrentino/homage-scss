@@ -2,20 +2,217 @@
 /* On screens that are 720px or more*/
 @media only screen and (min-width: 720px) {
   /*navigation*/
-  .menu {
-    margin-right: 1.25rem;
+
+  .mobile-menu {
+    display: none;
   }
 
-  .top-dropdown {
-    display: block;
-    column-count: 3;
-    column-gap: 1rem;
+  .tablet-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+    position: fixed;
+    background-color: rgb(243, 244, 245);
+    padding: 0 0.5rem;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    height: 100vh;
+
+    .menu-btn {
+      &:focus + .tablet-dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+      }
+
+      &:focus + .fixed-dropdown-tablet {
+        display: none;
+        z-index: 0;
+      }
+    }
   }
 
-  .dropdown-content {
-    display: initial;
-    position: relative;
-    padding: 0;
+  .fixed-dropdown-tablet {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(243, 244, 245);
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+
+    .top-dropdown-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+
+      h2 {
+        font-weight: 600;
+        line-height: 2rem;
+        padding-right: 0.5rem;
+      }
+
+      svg {
+        align-self: baseline;
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+    }
+    /* The dropdown container */
+    .dropdown-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+
+      .box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h3 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a {
+        color: rgb(80, 90, 99);
+        text-align: left;
+        text-decoration: none;
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+      }
+
+      .box2 {
+        .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+        }
+
+        a {
+          color: rgb(80, 90, 99);
+          text-align: left;
+          text-decoration: none;
+          font-size: 0.75rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .tablet-dropdown1,
+  .tablet-dropdown2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(243, 244, 245);
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .top-dropdown-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+
+      h2 {
+        font-weight: 600;
+        line-height: 2rem;
+        padding-right: 0.5rem;
+      }
+
+      svg {
+        align-self: baseline;
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+    }
+    /* The dropdown container */
+    .dropdown-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+
+      .box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h3 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a {
+        color: rgb(80, 90, 99);
+        text-align: left;
+        text-decoration: none;
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+      }
+
+      .box2 {
+        .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+        }
+
+        a {
+          color: rgb(80, 90, 99);
+          text-align: left;
+          text-decoration: none;
+          font-size: 0.75rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .tablet-dropdown3,
+  .tablet-dropdown4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(243, 244, 245);
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .dropdown-menu {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: rgb(80, 90, 99);
+      text-align: left;
+      text-decoration: none;
+      font-size: 0.75rem;
+      padding: 0.5rem 0;
+    }
   }
 
   .registration {
